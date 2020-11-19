@@ -11,5 +11,4 @@ export const mensaje = (client: Socket, io:SocketIO.Server)=>{
         console.log('Mensaje recibido: ', payload);
         io.emit('mensaje-nuevo',payload);
     });
-    
 }
